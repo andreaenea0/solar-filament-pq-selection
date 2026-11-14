@@ -1,0 +1,5 @@
+make_release.sh text eol=lf
+weights/*.txt -text
+weights/public_ensemble/*.txt -text
+weights/public/solar_unet_receipt.json -text
+docs/reference/submitted_test.csv text eol=lf

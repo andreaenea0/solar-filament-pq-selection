@@ -1,0 +1,12 @@
+{
+  "recipe": "submitted",
+  "retrained": "seed-0 and seed-1 U-Nets from kernels/k07-final/final.py on two T4 GPUs; LightGBM and verifier fixed",
+  "train_wall_s": 8263,
+  "inference_wall_s": 1237,
+  "archive_masks": 1150,
+  "retrained_masks": 1150,
+  "archive_masks_matched_iou_gt_0_5": 1086,
+  "mutual_pq": 0.8846,
+  "median_matched_iou": 0.9571,
+  "pixel_dice": 0.9373
+}

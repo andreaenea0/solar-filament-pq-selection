@@ -1,0 +1,12 @@
+recipe,worker,preparation_seconds,seconds,scope
+k06,temporal_event_1,438,6520,training_and_map_export
+k06,control_event_2,438,6923,training_and_map_export
+k09,control_event_1,497,6546,training_and_map_export
+k09,control_event_2,497,6645,training_and_map_export
+k11,control_event_1,525,6290,training_and_map_export
+k11,control_event_2,525,6399,training_and_map_export
+k07,effv2s_s1_event_1,464,7427,training_and_map_export
+k07,effv2s_s0_event_2,464,7775,training_and_map_export
+k17,seed_0,,138,through_final_training_epoch
+k17,seed_1,,139,through_final_training_epoch
+k17,seed_2,,131,through_final_training_epoch

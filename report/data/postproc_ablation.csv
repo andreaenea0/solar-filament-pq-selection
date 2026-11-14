@@ -1,0 +1,19 @@
+experiment,variant,cv_pq,reference_pq,protocol,notes
+reference,recipe public-ensemble: 0.35 LGB + 0.65 verifier ens4; DP lambda 0.27,0.4620,0.4620,5-fold staged OOF; downstream tuning; frozen upstream fits,pubown maps; ladder 0.15-0.8
+oracle,true g on the current tree (lambda 0.30),0.5722,0.4620,historical label-assisted fixed-penalty tree control; not a global PQ bound,20% of GT filaments have no candidate with IoU>0.5
+stacker,second-level LGB on features + LGB OOF + verifier OOF + parent/children context,0.4589,0.4620,5-fold downstream-tuned; frozen upstream fits,closed
+finer tree,ladder 0.05-0.95 step 0.05 (~200 cand/img); oracle,0.5894,0.5722,historical fold-0 label-assisted control,more candidates raise the ceiling
+finer tree,ladder 0.05-0.95 step 0.05; LGB only,0.4413,0.4531,5-fold downstream-tuned; frozen upstream fits,hypothesis: winner's curse; mechanism not isolated; lower reported score
+fragment merges,union of components within closing radius r=3/8/16; greedy oracle,0.5768,0.5722,historical fold-0 label-assisted control,+0.005 ceiling only; closed
+ladder subsets,best 3-5 of the 6 levels chosen on training folds,0.4588,0.4620,5-fold downstream-tuned; frozen upstream fits,closed
+per-level penalty,lambda per ladder level (coordinate descent on training folds),0.4631,0.4620,5-fold downstream-tuned; frozen upstream fits,small reported point change; no paired interval in this table
+uncertainty penalty,score - k*|LGB - verifier| with (alpha;k;lambda) nested,0.4618,0.4620,5-fold downstream-tuned; frozen upstream fits,closed
+mask morphology,fill holes / closing r1-r3 / opening r1 / Gaussian smoothing of selected masks,0.4617-0.4620,0.4620,fixed transform on public-ensemble OOF,closed
+verifier v12,0.35 LGB + 0.65 verifier v1+v2 (R2 0.494); lambda 0.27 fixed,0.4631,0.4620,5-fold staged OOF; day bootstrap +0.0011 [-0.0010;+0.0033],reported paired interval includes zero
+verifier v12 nested,(alpha;lambda) nested,0.4623,0.4620,5-fold downstream-tuned; frozen upstream fits,small point change; no paired interval in this table
+LGB extra features,skeleton/width; cross-profile contrast; context counts; boundary agreement (LGB R2 0.463 -> 0.476),0.4542,0.4531,LGB only best lambda,R2 up; PQ flat
+LGB extra + v12,0.35 LGB(xf) + 0.65 v12; lambda 0.27,0.4628,0.4620,day bootstrap +0.0008 [-0.0019;+0.0034],reported paired interval includes zero
+soft extent,expected-IoU top-k re-decoding of selected masks in a 3-px band (Nowozin 2014),0.4620,0.4620,5-fold staged OOF,closed
+soft extent,existence-normalised extent p/q90 thresholded at 0.4 / 0.6 / 0.8,0.4615,0.4620,5-fold staged OOF,0.4606 at 0.6; 0.4487 at 0.8; closed
+two trees,add disjoint own-tree (recipe three-verifiers) masks or swap matched masks by score,0.4623,0.4620,5-fold staged OOF,small reported point change; no paired interval in this table
+lambda by annotator count,oracle lambda per number of records (R=1: 0.23; R=2: 0.27; R=3: 0.30),~0.464,0.4620,5-fold staged OOF (oracle),R unknown at test time; not deployable

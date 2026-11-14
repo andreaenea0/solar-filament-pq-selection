@@ -1,0 +1,95 @@
+{
+  "images": 180,
+  "device": "cuda:0",
+  "cpus": 4,
+  "manifest": {
+    "checked": 23,
+    "mismatched": 0
+  },
+  "recipes": {
+    "submitted": {
+      "returncode": 0,
+      "wall_s": 1270.7,
+      "s_per_image": 7.059,
+      "parity": {
+        "archive_masks": 1150,
+        "regenerated_masks": 1149,
+        "byte_identical": 1025,
+        "strict_iou_matches": 1149,
+        "min_matched_iou": 0.906365
+      }
+    },
+    "single-unet": {
+      "returncode": 0,
+      "wall_s": 984.8,
+      "s_per_image": 5.471,
+      "parity": {
+        "archive_masks": 1187,
+        "regenerated_masks": 1188,
+        "byte_identical": 1007,
+        "strict_iou_matches": 1187,
+        "min_matched_iou": 0.693593
+      }
+    },
+    "three-verifiers": {
+      "returncode": 0,
+      "wall_s": 1255.2,
+      "s_per_image": 6.973,
+      "parity": {
+        "archive_masks": 1156,
+        "regenerated_masks": 1156,
+        "byte_identical": 1025,
+        "strict_iou_matches": 1156,
+        "min_matched_iou": 0.882803
+      }
+    },
+    "public-ensemble": {
+      "returncode": 0,
+      "wall_s": 3288.8,
+      "s_per_image": 18.271,
+      "parity": {
+        "archive_masks": 1165,
+        "regenerated_masks": 1167,
+        "byte_identical": 1028,
+        "strict_iou_matches": 1165,
+        "min_matched_iou": 0.862647
+      }
+    }
+  },
+  "submitted_stages": {
+    "seconds_total": {
+      "load_models": 4.28,
+      "read_normalise": 7.51,
+      "unet_d4_tta_2_seeds": 543.85,
+      "threshold_tree_and_features": 613.79,
+      "verifier_crops": 54.68,
+      "verifier_forward": 6.25,
+      "gain_model_and_selection": 0.86,
+      "write_csv": 0.01
+    },
+    "seconds_per_image": {
+      "read_normalise": 0.0417,
+      "unet_d4_tta_2_seeds": 3.0214,
+      "threshold_tree_and_features": 3.41,
+      "verifier_crops": 0.3038,
+      "verifier_forward": 0.0347,
+      "gain_model_and_selection": 0.0048,
+      "write_csv": 0.0001
+    },
+    "inference_s_per_image": 6.8164,
+    "first_image_s": 12.73,
+    "median_image_s_before_verifier": 6.763,
+    "candidates": 11518,
+    "masks": 1149,
+    "gpu": "Tesla T4",
+    "peak_gpu_memory_gb": 6.09,
+    "torch": "2.11.0+cu130",
+    "staged_vs_entry_point": {
+      "archive_masks": 1149,
+      "regenerated_masks": 1149,
+      "byte_identical": 1054,
+      "strict_iou_matches": 1149,
+      "min_matched_iou": 0.881126
+    }
+  }
+}

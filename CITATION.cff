@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+type: software
+title: "Solar Filament Segmentation Challenge 2026: submitted pipeline"
+message: >-
+  If you use this software, please cite this record.
+  Model weights have separate terms in WEIGHTS_LICENSE.md.
+authors:
+  - family-names: Galesso
+    given-names: Andrea
+license: MIT
+abstract: >-
+  Solar filament instance segmentation from GONG H-alpha images using
+  a probability-map component tree, predicted strict-match quality,
+  and disjoint instance selection by dynamic programming.
+keywords:
+  - solar filaments
+  - instance segmentation
+  - annotation disagreement

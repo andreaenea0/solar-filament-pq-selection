@@ -1,0 +1,7 @@
+group,config,pq,pq_lo,pq_hi,sq,rq
+Inter-annotator reference (multi-annotator obs.),Annotator vs.\ annotator,0.3399,,,,
+"Pixel model (fold 0, fixed rule)","Public U-Nets, ResNet-34 + EffNetV2-S \cite{afshar2026unet}",0.4524457627720363,0.4327912345066462,0.4701876312004346,0.6866505099822595,0.6589171000305903
+"Pixel model (fold 0, fixed rule)","Ours, per-crop Dice",0.411060106663636,0.3917510243951039,0.4290634429808833,0.6777050027377055,0.6065472513897467
+"Pixel model (fold 0, fixed rule)","Ours, batch-level Dice (submitted recipe)",0.45248941917782,0.4342776721840797,0.4698093633184723,0.6854751257004779,0.6601106330669945
+"Pixel model (fold 0, fixed rule)",\quad + temporally adjacent GONG frames,0.4446589862898186,0.4261072821482747,0.4613876054902811,0.6839475663536884,0.6501360749924403
+"Pixel model (fold 0, fixed rule)",\quad + public ensemble (mean),0.4552098248023505,0.4365839161891345,0.4720458564111894,0.6877209349403834,0.6619106699751861

@@ -1,0 +1,2 @@
+recipe,images,reference_masks,actual_masks,shared_ids,exact_rles,strict_matches,unmatched_actual,unmatched_reference,minimum_iou,mean_matched_iou,prediction_pq_agreement
+submitted,180,1150,1150,1149,1007,1149,1,1,0.892578125,0.9990224474784442,0.9981537323067238

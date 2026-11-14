@@ -1,0 +1,12 @@
+final,variant,selector,lambda,cv_pq_5fold,params_M_at_test,note
+three-verifiers,rule only (Afshar keep rule) on own maps,rule,,0.4450,44.2,own U-Net EffNetV2-S 22.1M x 2 seeds at test (1 model per fold in OOF)
+three-verifiers,LGB only,LGB 31 feat (no metadata),0.25,0.4485,44.2,selector OOF; upstream fits fixed
+three-verifiers,verifier only (3 r18),3x ResNet-18 4ch (11.2M each),0.29,0.4529,77.7,
+three-verifiers,LGB + 1 r18 (0.5/0.5),LGB + 1x ResNet-18,0.27,0.4553,55.4,lightest blend
+three-verifiers,LGB + 3 r18 (0.5/0.5) [three-verifiers],LGB + 3x ResNet-18,0.25,0.4557,77.7,+0.0004..0.0007 over 1 r18 (noise level)
+public-ensemble,rule only on public 10-model ensemble,rule,,0.4522,232.6,Afshar reference: 5x U-Net R34 (24.4M) + 5x U-Net EffNetV2-S (22.1M)
+public-ensemble,LGB only on public+own maps,LGB 31 feat,0.25,0.4533,276.8,
+public-ensemble,verifier only (ens4),3x ResNet-18 + EffNet-B0 (4.0M),0.29,0.4591,314.3,
+public-ensemble,LGB + 1 r18 (0.35/0.65),LGB + 1x ResNet-18,0.27,0.4618,288.0,
+public-ensemble,LGB + 3 r18 (0.35/0.65) [new public-ensemble],LGB + 3x ResNet-18,0.27,0.4631,310.3,EfficientNet-B0 verifier dropped
+public-ensemble,LGB + ens4 (previous public ensemble),LGB + 3x ResNet-18 + EffNet-B0,0.27,0.4633,314.3,effb0 adds +0.0002 -> removed

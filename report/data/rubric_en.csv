@@ -1,0 +1,11 @@
+metric,\textbf{Submitted},3 verif.,+ public
+(1) PQ / SQ / RQ,0.455/0.685/0.664,0.456/0.686/0.665,0.463/0.687/0.674
+(2) Pair Dice: mean/med.,0.728/0.790,0.729/0.790,0.736/0.793
+\quad Dice / record [95\% CI],"0.672 \scriptsize[0.661, 0.683]","0.672 \scriptsize[0.661, 0.683]","0.670 \scriptsize[0.658, 0.682]"
+(3) Pair IoU: mean/med.,0.598/0.653,0.599/0.653,0.606/0.657
+\quad MIoU$^\ast$ \cite{ahmadzadeh2021miou},0.839,0.839,0.841
+(4) Split: $\geq$2 preds,4.0\%,3.9\%,3.1\%
+(4) Merge: $\geq$2 filaments,1.9\%,1.9\%,2.2\%
+Filaments hit / missed,79.9\%/20.1\%,79.9\%/20.1\%,79.7\%/20.3\%
+Parameters,55M,78M,310M
+s/img (T4),7.5,7.5,20.8

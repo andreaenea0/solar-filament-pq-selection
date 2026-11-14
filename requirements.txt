@@ -1,0 +1,15 @@
+# Portable dependency bounds; exact tested Windows CPU versions: requirements-lock.txt.
+numpy>=1.26,<3
+scipy>=1.11,<2
+Pillow>=10,<14
+pycocotools>=2.0.8,<3
+torch>=2.4,<3
+torchvision>=0.19,<1
+segmentation-models-pytorch==0.5.0
+timm>=1.0.15,<2
+pandas>=2.2,<4
+lightgbm>=4,<5
+opencv-python-headless>=4.9,<6
+nbconvert>=7,<8
+ipykernel>=6,<8
+matplotlib>=3.8,<4

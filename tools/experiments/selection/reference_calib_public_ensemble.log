@@ -1,0 +1,24 @@
+raw sweep {0.15: 0.4524, 0.17: 0.456, 0.19: 0.4579, 0.21: 0.459, 0.23: 0.4607, 0.25: 0.4613, 0.27: 0.4631, 0.29: 0.4613, 0.31: 0.4599, 0.33: 0.4581, 0.35: 0.4556}
+ghat [-1.00,0.05) n   9021 mean ghat 0.011 mean g 0.011
+ghat [0.05,0.10) n   2988 mean ghat 0.075 mean g 0.069
+ghat [0.10,0.15) n   2356 mean ghat 0.125 mean g 0.115
+ghat [0.15,0.20) n   2206 mean ghat 0.175 mean g 0.176
+ghat [0.20,0.23) n   1332 mean ghat 0.215 mean g 0.204
+ghat [0.23,0.26) n   1471 mean ghat 0.245 mean g 0.221
+ghat [0.26,0.30) n   1945 mean ghat 0.280 mean g 0.261
+ghat [0.30,0.35) n   2496 mean ghat 0.325 mean g 0.302
+ghat [0.35,0.40) n   2738 mean ghat 0.375 mean g 0.348
+ghat [0.40,0.50) n   6062 mean ghat 0.452 mean g 0.457
+ghat [0.50,0.60) n   6509 mean ghat 0.550 mean g 0.549
+ghat [0.60,0.70) n   4959 mean ghat 0.644 mean g 0.650
+ghat [0.70,2.00) n   1301 mean ghat 0.736 mean g 0.726
+fixed point on raw (all OOF): 0.2304 pq 0.4607
+fold 0: tuned 0.27 raw_fp 0.2301 iso_fp 0.2305 iso_tuned 0.25
+fold 1: tuned 0.27 raw_fp 0.2310 iso_fp 0.2311 iso_tuned 0.27
+fold 2: tuned 0.27 raw_fp 0.2303 iso_fp 0.2306 iso_tuned 0.25
+fold 3: tuned 0.27 raw_fp 0.2293 iso_fp 0.2292 iso_tuned 0.25
+fold 4: tuned 0.27 raw_fp 0.2311 iso_fp 0.2319 iso_tuned 0.27
+tuned 0.4631
+raw_fp 0.4608
+iso_fp 0.4615
+iso_tuned 0.4621
